@@ -4,7 +4,7 @@
   --bg-alt: #161617;
   --text: #ecebe9;
   --muted: #9a9894;
-  --accent: #5b8dd9;
+  --accent: #C6A15B;
   --card: #1d1d1f;
   --border: #2c2c2e;
   --shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
@@ -18,7 +18,7 @@
   --bg-alt: #edece9;
   --text: #1a1a1a;
   --muted: #66635e;
-  --accent: #2659c4;
+  --accent: #96762F;
   --card: #ffffff;
   --border: #dddad5;
   --shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
@@ -90,7 +90,7 @@ a { color: inherit; }
 @keyframes blink { 50% { opacity: 0; } }
 .btn {
   display: inline-block; margin-top: 12px; padding: 12px 32px; border-radius: 999px;
-  background: var(--accent); color: #fff; text-decoration: none; font-weight: 600;
+  background: var(--accent); color: #1C1A15; text-decoration: none; font-weight: 600;
   transition: background 0.2s;
 }
 .btn:hover { background: color-mix(in srgb, var(--accent) 85%, #fff); }
@@ -174,7 +174,7 @@ a { color: inherit; }
 .spec small { color: var(--muted); }
 .badge {
   display: inline-block; padding: 0 10px; margin-left: 4px; border-radius: 999px;
-  background: var(--accent); color: #fff; font-size: 0.85em; font-weight: 700;
+  background: var(--accent); color: #1C1A15; font-size: 0.85em; font-weight: 700;
 }
 
 /* ===== History（縦型タイムライン） ===== */
@@ -253,7 +253,7 @@ a { color: inherit; }
 .footer { padding: 32px 0; text-align: center; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--border); }
 .to-top {
   position: fixed; right: 20px; bottom: 20px; z-index: 10; width: 44px; height: 44px; border-radius: 50%;
-  border: 0; background: var(--accent); color: #fff; font-size: 1.2rem; cursor: pointer;
+  border: 0; background: var(--accent); color: #1C1A15; font-size: 1.2rem; cursor: pointer;
   box-shadow: var(--shadow); opacity: 0; pointer-events: none; transition: opacity 0.3s;
 }
 .to-top.is-shown { opacity: 1; pointer-events: auto; }
