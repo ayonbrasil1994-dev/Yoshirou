@@ -355,6 +355,10 @@ a { color: inherit; }
 .article__hero { margin: 0 0 28px; border-radius: var(--radius); overflow: hidden; }
 .article__hero img { width: 100%; height: auto; display: block; }
 .article__text { line-height: 1.9; margin: 0 0 16px; }
+.article__photos { columns: 2; column-gap: 14px; margin: 28px 0 8px; }
+.article__photos img { width: 100%; height: auto; display: block; border-radius: 12px; margin: 0 0 14px; break-inside: avoid; }
+.article__credit { color: var(--muted); font-size: 0.85rem; margin: 0 0 8px; }
+@media (max-width: 640px) { .article__photos { columns: 1; } }
 .article__nav {
   display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
   margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border);
