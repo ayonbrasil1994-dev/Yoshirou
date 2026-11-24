@@ -81,10 +81,10 @@ a { color: inherit; }
 .hero__video {
   position: absolute; inset: 0; overflow: hidden; pointer-events: none;
 }
-.hero__video iframe {
+.hero__video iframe, .hero__video video {
   position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
   width: 100vw; height: 56.25vw; min-width: 177.78vh; min-height: 100%;
-  border: 0; pointer-events: none;
+  border: 0; pointer-events: none; object-fit: cover;
 }
 .hero__shade {
   position: absolute; inset: 0;
