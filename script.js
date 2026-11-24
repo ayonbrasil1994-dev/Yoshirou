@@ -96,7 +96,7 @@ toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smoot
 // ===== ギャラリーの拡大表示（ライトボックス・トップページのみ） =====
 const lightbox = document.querySelector(".lightbox");
 if (lightbox) {
-  const items = [...document.querySelectorAll(".gallery__item img")];
+  const items = [...document.querySelectorAll(".slideshow__img")];
   const lbImg = lightbox.querySelector(".lightbox__img");
   const lbCount = lightbox.querySelector(".lightbox__count");
   let current = 0;
@@ -121,7 +121,8 @@ if (lightbox) {
     if (lastFocus) lastFocus.focus();
   }
 
-  items.forEach((img, i) => img.parentElement.addEventListener("click", () => openLightbox(i)));
+  const mainBtn = document.querySelector(".slideshow__main");
+  if (mainBtn) mainBtn.addEventListener("click", () => openLightbox(slideIndex()));
   lightbox.querySelector(".lightbox__close").addEventListener("click", closeLightbox);
   lightbox.querySelector(".lightbox__nav--prev").addEventListener("click", () => show(current - 1));
   lightbox.querySelector(".lightbox__nav--next").addEventListener("click", () => show(current + 1));
@@ -143,6 +144,50 @@ if (lightbox) {
     if (Math.abs(dx) > 50) show(current + (dx < 0 ? 1 : -1));
     touchX = null;
   });
+}
+
+
+// ===== ギャラリーのスライドショー（トップページのみ） =====
+const slideshow = document.querySelector(".slideshow");
+let slideCurrent = 0;
+function slideIndex() { return slideCurrent; }
+if (slideshow) {
+  const slides = [...slideshow.querySelectorAll(".slideshow__img")];
+  const thumbs = [...slideshow.querySelectorAll(".slideshow__thumb")];
+  const caption = slideshow.querySelector(".slideshow__caption");
+  const count = slideshow.querySelector(".slideshow__count");
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let timer = null;
+
+  function goTo(index) {
+    slideCurrent = (index + slides.length) % slides.length;
+    slides.forEach((img, i) => img.classList.toggle("is-active", i === slideCurrent));
+    thumbs.forEach((t, i) => t.classList.toggle("is-active", i === slideCurrent));
+    caption.textContent = slides[slideCurrent].alt;
+    count.textContent = `${slideCurrent + 1} / ${slides.length}`;
+  }
+  function start() {
+    if (reduceMotion || timer !== null) return;
+    timer = setInterval(() => { if (!document.hidden) goTo(slideCurrent + 1); }, 5000);
+  }
+  function stop() { if (timer !== null) { clearInterval(timer); timer = null; } }
+  function restart() { stop(); start(); }
+
+  slideshow.querySelector(".slideshow__nav--prev").addEventListener("click", () => { goTo(slideCurrent - 1); restart(); });
+  slideshow.querySelector(".slideshow__nav--next").addEventListener("click", () => { goTo(slideCurrent + 1); restart(); });
+  thumbs.forEach((t, i) => t.addEventListener("click", () => { goTo(i); restart(); }));
+  slideshow.addEventListener("pointerenter", stop);
+  slideshow.addEventListener("pointerleave", start);
+
+  let sx = null;
+  slideshow.addEventListener("touchstart", (e) => { sx = e.touches[0].clientX; }, { passive: true });
+  slideshow.addEventListener("touchend", (e) => {
+    if (sx === null) return;
+    const dx = e.changedTouches[0].clientX - sx;
+    if (Math.abs(dx) > 50) { goTo(slideCurrent + (dx < 0 ? 1 : -1)); restart(); }
+    sx = null;
+  });
+  start();
 }
 
 // ===== フッターの年 =====
