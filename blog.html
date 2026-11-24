@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | よしろう</title>
+  <meta name="description" content="よしろう のブログ。サイト開設のお知らせや、BMW M4 の話題。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">よしろう</a>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav" class="nav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#activities">Activities</a>
+        <a href="index.html#car">My Car</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#movie">Movie</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="blog.html" aria-current="page">Blog</a>
+        <button class="theme-toggle" aria-label="テーマを切り替える">◐</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ページ見出し -->
+    <section class="hero hero--page">
+      <img class="hero__bg" src="images/web/rear-building.jpg" alt="" fetchpriority="high">
+      <div class="hero__shade"></div>
+      <div class="container hero__inner">
+        <p class="hero__greeting">よしろう の</p>
+        <h1 class="hero__title"><span class="accent">Blog</span></h1>
+        <p class="hero__lead">お知らせや M4 の話題をまとめています。</p>
+      </div>
+    </section>
+
+    <!-- 記事一覧 -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title reveal">Posts</h2>
+        <div class="posts">
+          <article class="post reveal">
+            <a class="post__thumb" href="index.html#gallery" tabindex="-1" aria-hidden="true">
+              <img src="images/web/front-city.jpg" alt="" loading="lazy" width="1600" height="1066">
+            </a>
+            <div class="post__body">
+              <p class="post__tag">お知らせ</p>
+              <h3 class="post__title">サイトを開設しました</h3>
+              <p class="post__excerpt">
+                よしろう の自己紹介サイトを公開しました。愛車 BMW M4（F82）の写真を Gallery に、動画を Movie にまとめています。
+              </p>
+              <a class="post__more" href="index.html#gallery">Gallery を見る →</a>
+            </div>
+          </article>
+
+          <article class="post reveal">
+            <a class="post__thumb" href="index.html#car" tabindex="-1" aria-hidden="true">
+              <img src="images/web/wheel.jpg" alt="" loading="lazy" width="620" height="924">
+            </a>
+            <div class="post__body">
+              <p class="post__tag">イベント</p>
+              <h3 class="post__title">Fenderist にエントリー</h3>
+              <p class="post__excerpt">
+                M4 で Fenderist にエントリーしています（F154 / STOCK FENDER 部門）。ホイールやエアサスなどの仕様は My Car で紹介しています。
+              </p>
+              <a class="post__more" href="index.html#car">My Car を見る →</a>
+            </div>
+          </article>
+
+          <article class="post reveal">
+            <a class="post__thumb" href="index.html#movie" tabindex="-1" aria-hidden="true">
+              <img src="images/web/night-side.jpg" alt="" loading="lazy" width="1386" height="924">
+            </a>
+            <div class="post__body">
+              <p class="post__tag">動画</p>
+              <h3 class="post__title">M4 の動画を公開中</h3>
+              <p class="post__excerpt">
+                BMW M4 の動画「M4 Kirari」を YouTube で公開しています。トップページの Movie からそのまま再生できます。
+              </p>
+              <a class="post__more" href="index.html#movie">Movie を見る →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> よしろう</p>
+  </footer>
+
+  <button class="to-top" aria-label="ページの先頭へ">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
