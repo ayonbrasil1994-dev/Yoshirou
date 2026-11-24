@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoshirou | BMW M4</title>
+  <meta name="description" content="Personal site of Yoshirou. Photos and videos of my BMW M4.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Yoshirou | BMW M4">
+  <meta property="og:title" content="Yoshirou | BMW M4">
+  <meta property="og:description" content="Personal site of Yoshirou. Photos and videos of my BMW M4.">
+  <meta property="og:url" content="https://ayonbrasil1994-dev.github.io/Yoshirou/en.html">
+  <meta property="og:image" content="https://ayonbrasil1994-dev.github.io/Yoshirou/images/web/night-front.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Yoshirou | BMW M4">
+  <meta name="twitter:description" content="Personal site of Yoshirou. Photos and videos of my BMW M4.">
+  <meta name="twitter:image" content="https://ayonbrasil1994-dev.github.io/Yoshirou/images/web/night-front.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo">Yoshirou</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav" class="nav">
+        <a href="#about">About</a>
+        <a href="#car">My Car</a>
+        <a href="#history">History</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="blog.html">Blog</a>
+        <a href="index.html">JP</a>
+        <button class="theme-toggle" aria-label="Toggle theme">◐</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ヒーロー：夜の M4 を背景に -->
+    <section class="hero">
+      <img class="hero__bg" src="images/web/night-front.jpg" alt="" fetchpriority="high">
+      <div class="hero__video" aria-hidden="true">
+        <iframe src="https://www.youtube-nocookie.com/embed/ufaxEfgtLSU?autoplay=1&mute=1&loop=1&playlist=ufaxEfgtLSU&controls=0&rel=0&playsinline=1&modestbranding=1&disablekb=1" title="" tabindex="-1" allow="autoplay; encrypted-media" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="hero__shade"></div>
+      <div class="container hero__inner">
+        <p class="hero__greeting">Hi there,</p>
+        <h1 class="hero__title"><span class="accent">Yoshirou</span>.</h1>
+        <p class="hero__lead">
+          <span class="typing" data-words='["BMW M4 owner","Cars & photography","Nice to meet you"]'></span><span class="cursor">|</span>
+        </p>
+        <a href="#about" class="btn">See more</a>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section__title reveal">About</h2>
+        <div class="about">
+          <figure class="about__photo reveal">
+            <img src="images/web/me.jpg" alt="Standing in front of my M4" loading="lazy" width="1067" height="1600">
+          </figure>
+          <div class="about__text reveal">
+            <p>
+              Hi, I'm Yoshirou.<br>
+              I work at a Toyota-group auto parts manufacturer, making safety products.
+            </p>
+            <p>
+              I got into cars thanks to my dad. I used to drive a Fairlady Z (Z34), and now I enjoy life with a BMW M4.
+            </p>
+            <dl class="profile">
+              <div><dt>Name</dt><dd>Yoshirou</dd></div>
+              <div><dt>From</dt><dd>Aichi, Japan</dd></div>
+              <div><dt>Hobbies</dt><dd>Drives / Photo meets / Customizing</dd></div>
+              <div><dt>Car</dt><dd>BMW M4 (F82)</dd></div>
+              <div><dt>Previous car</dt><dd>Nissan Fairlady Z (Z34)</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activities -->
+    <section id="activities" class="section">
+      <div class="container">
+        <h2 class="section__title reveal">Activities</h2>
+        <div class="activities">
+          <article class="activity reveal">
+            <p class="activity__label"><span>01</span>Work</p>
+            <h3 class="activity__title">Work</h3>
+            <p>I work at a Toyota-group auto parts manufacturer, making safety products.</p>
+          </article>
+          <article class="activity reveal">
+            <p class="activity__label"><span>02</span>Car Life</p>
+            <h3 class="activity__title">Car Life</h3>
+            <p>Enjoying life with my BMW M4 (F82). Driving is my favorite pastime.</p>
+          </article>
+          <article class="activity reveal">
+            <p class="activity__label"><span>03</span>Photo</p>
+            <h3 class="activity__title">Photography</h3>
+            <p>Photo meets are another hobby of mine. See the M4 photos in the <a href="#gallery">Gallery</a> .</p>
+          </article>
+          <article class="activity reveal">
+            <p class="activity__label"><span>04</span>Custom</p>
+            <h3 class="activity__title">Customs & Events</h3>
+            <p>I enjoy customizing — wheels, air suspension and more — and I enter events like Fenderist. See <a href="#car">My Car</a> for details.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Car -->
+    <section id="car" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title reveal">My Car</h2>
+        <div class="car">
+          <div class="car__photo reveal">
+            <img src="images/web/night-side.jpg" alt="Side profile of the M4 at night" loading="lazy" width="1386" height="924">
+          </div>
+          <div class="car__info reveal">
+            <h3 class="car__name">BMW M4 <span>F82 / 2017</span></h3>
+            <p class="car__lead">Notes on the car and the details I focused on.</p>
+            <dl class="spec">
+              <div><dt>Body color</dt><dd>Black</dd></div>
+              <div><dt>Wheels</dt><dd>BC Forged HCA386S</dd></div>
+              <div><dt>Size</dt><dd>F: 20×9.5J −3<br>R: 20×11J +19</dd></div>
+              <div><dt>Suspension</dt><dd>APgarage pneumatec air suspension</dd></div>
+              <div><dt>Aero</dt><dd>MAXTON design</dd></div>
+              <div><dt>Events</dt><dd>Fenderist entry <span class="badge">F154</span><br><small>STOCK FENDER class</small></dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- History -->
+    <section id="history" class="section">
+      <div class="container">
+        <h2 class="section__title reveal">History</h2>
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <p class="timeline__meta"><time datetime="2020-04">2020.04</time><span class="timeline__tag">Delivery</span></p>
+            <h3 class="timeline__title">M4 Delivered</h3>
+            <p class="timeline__text">Took delivery of the BMW M4 (F82 / 2017) in black.<a href="articles/delivery.html">Read more →</a></p>
+          </li>
+          <li class="timeline__item reveal">
+            <p class="timeline__meta"><time datetime="2021-10">2021.10</time><span class="timeline__tag">Custom</span></p>
+            <h3 class="timeline__title">Air Suspension</h3>
+            <p class="timeline__text">Installed APgarage pneumatec air suspension.<a href="articles/air-suspension.html">Read more →</a></p>
+          </li>
+          <li class="timeline__item reveal">
+            <p class="timeline__meta"><time datetime="2022-10">2022.10</time><span class="timeline__tag">Custom</span></p>
+            <h3 class="timeline__title">BC Forged Wheels</h3>
+            <p class="timeline__text">Fitted BC Forged HCA386S wheels.<a href="articles/wheels.html">Read more →</a></p>
+          </li>
+          <li class="timeline__item reveal">
+            <p class="timeline__meta"><time datetime="2023-01">2023.01</time><span class="timeline__tag">Event</span></p>
+            <h3 class="timeline__title">NEWYEAR MT 2023</h3>
+            <p class="timeline__text">Joined NEWYEAR MT 2023.<a href="articles/newyearmt.html">Read more →</a></p>
+          </li>
+          <li class="timeline__item reveal">
+            <p class="timeline__meta"><time datetime="2023-10">2023.10</time><span class="timeline__tag">Custom</span></p>
+            <h3 class="timeline__title">MAXTON Aero</h3>
+            <p class="timeline__text">Installed MAXTON design lip, side and rear aero.<a href="articles/maxton.html">Read more →</a></p>
+          </li>
+          <li class="timeline__item reveal">
+            <p class="timeline__meta"><time datetime="2024-07">2024.07</time><span class="timeline__tag">Event</span></p>
+            <h3 class="timeline__title">Wreckin' Meet</h3>
+            <p class="timeline__text">Joined Wreckin' Meet.<a href="articles/wreckinmeet.html">Read more →</a></p>
+          </li>
+          <li class="timeline__item reveal">
+            <p class="timeline__meta"><time datetime="2024-07">2024.07</time><span class="timeline__tag">Event</span></p>
+            <h3 class="timeline__title">Fenderist 2024</h3>
+            <p class="timeline__text">Entered Fenderist 2024 (F154 / STOCK FENDER class).<a href="articles/fenderist.html">Read more →</a></p>
+          </li>
+          <li class="timeline__item reveal">
+            <p class="timeline__meta"><time datetime="2024-09">2024.09</time><span class="timeline__tag">Event</span></p>
+            <h3 class="timeline__title">A-MESSE</h3>
+            <p class="timeline__text">Joined A-MESSE.<a href="articles/amesse.html">Read more →</a></p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <h2 class="section__title reveal">Gallery</h2>
+        <div class="slideshow reveal">
+          <div class="slideshow__stage">
+            <button class="slideshow__main" aria-label="Enlarge photo">
+              <img class="slideshow__img is-active" src="images/web/front-city.jpg" alt="M4 parked in the city, front three-quarter" fetchpriority="high">
+              <img class="slideshow__img" src="images/web/front-street.jpg" alt="M4 from the front, parked in the road" loading="lazy">
+              <img class="slideshow__img" src="images/web/rear-building.jpg" alt="M4 rear three-quarter by a glass building" loading="lazy">
+              <img class="slideshow__img" src="images/web/wheel.jpg" alt="Close-up of the front wheel" loading="lazy">
+              <img class="slideshow__img" src="images/web/front-side.jpg" alt="M4 driving past buildings" loading="lazy">
+              <img class="slideshow__img" src="images/web/night-front.jpg" alt="M4 parked on a tree-lined street at night" loading="lazy">
+              <img class="slideshow__img" src="images/web/rear-side.jpg" alt="M4 from the rear, by a plaza" loading="lazy">
+              <img class="slideshow__img" src="images/web/night-side.jpg" alt="Side profile of the M4 at night" loading="lazy">
+            </button>
+            <button class="slideshow__nav slideshow__nav--prev" aria-label="Previous photo">‹</button>
+            <button class="slideshow__nav slideshow__nav--next" aria-label="Next photo">›</button>
+            <p class="slideshow__caption">M4 parked in the city, front three-quarter</p>
+            <p class="slideshow__count">1 / 8</p>
+          </div>
+          <div class="slideshow__thumbs">
+            <button class="slideshow__thumb is-active" aria-label="Photo 1: M4 parked in the city, front three-quarter"><img src="images/web/front-city.jpg" alt="" loading="lazy"></button>
+            <button class="slideshow__thumb" aria-label="Photo 2: M4 from the front, parked in the road"><img src="images/web/front-street.jpg" alt="" loading="lazy"></button>
+            <button class="slideshow__thumb" aria-label="Photo 3: M4 rear three-quarter by a glass building"><img src="images/web/rear-building.jpg" alt="" loading="lazy"></button>
+            <button class="slideshow__thumb" aria-label="Photo 4: Close-up of the front wheel"><img src="images/web/wheel.jpg" alt="" loading="lazy"></button>
+            <button class="slideshow__thumb" aria-label="Photo 5: M4 driving past buildings"><img src="images/web/front-side.jpg" alt="" loading="lazy"></button>
+            <button class="slideshow__thumb" aria-label="Photo 6: M4 parked on a tree-lined street at night"><img src="images/web/night-front.jpg" alt="" loading="lazy"></button>
+            <button class="slideshow__thumb" aria-label="Photo 7: M4 from the rear, by a plaza"><img src="images/web/rear-side.jpg" alt="" loading="lazy"></button>
+            <button class="slideshow__thumb" aria-label="Photo 8: Side profile of the M4 at night"><img src="images/web/night-side.jpg" alt="" loading="lazy"></button>
+          </div>
+        </div>
+        <p class="credit reveal">Photo: Jotaro Yamauchi Photography</p>
+      </div>
+    </section>
+
+    <!-- Movie -->
+    <section id="movie" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title reveal">Movie</h2>
+        <div class="movie reveal">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/ufaxEfgtLSU?rel=0"
+            title="M4 Kirari"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <p class="movie__link reveal"><a href="https://youtu.be/ufaxEfgtLSU" target="_blank" rel="noopener">Watch on YouTube ↗</a></p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container contact reveal">
+        <h2 class="section__title">Contact</h2>
+        <p>Feel free to reach out.</p>
+        <div class="links">
+          <a href="https://www.instagram.com/yoshihiro_34/" target="_blank" rel="noopener">Instagram <span>@yoshihiro_34</span></a>
+          <a href="https://x.com/yoshirou_0924" target="_blank" rel="noopener">X <span>@yoshirou_0924</span></a>
+          <a href="blog.html">Blog <span>Japanese</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Yoshirou</p>
+  </footer>
+
+  <!-- 写真の拡大表示 -->
+  <div class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lightbox__close" aria-label="Close">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous photo">‹</button>
+    <img class="lightbox__img" src="" alt="">
+    <button class="lightbox__nav lightbox__nav--next" aria-label="Next photo">›</button>
+    <p class="lightbox__count"></p>
+  </div>
+
+  <button class="to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

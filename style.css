@@ -347,3 +347,17 @@ a { color: inherit; }
   .hero__video { display: none; }
   .reveal { transition: none; }
 }
+
+/* ===== Article ===== */
+.article__wrap { max-width: 760px; }
+.article__meta { display: flex; align-items: center; gap: 12px; color: var(--muted); margin: 0 0 8px; }
+.article__title { font-size: 2rem; letter-spacing: 0.04em; margin: 0 0 24px; }
+.article__hero { margin: 0 0 28px; border-radius: var(--radius); overflow: hidden; }
+.article__hero img { width: 100%; height: auto; display: block; }
+.article__text { line-height: 1.9; margin: 0 0 16px; }
+.article__nav {
+  display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border);
+}
+.article__nav a { color: var(--accent); text-decoration: none; }
+.article__nav a:hover { text-decoration: underline; }
